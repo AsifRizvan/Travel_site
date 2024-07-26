@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BucketListly Blog - Solo Travel, Backpacking & Photography</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- mdbootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- icon -->
+    <link rel="icon" href="./images/icon.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- <section id="wholepage"> -->
+  <!-- section for background color -->
+   <section id="bg">
+    <!-- navbar section -->
+     <!-- first nav -->
+      <section id="nav">
+    <nav class="navbar nav-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/icon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <span>BucketListly Blog</span>
+          </a>
+          <div class="search">
+          <input type="search" class="searchbar" placeholder="Search the blog"><span><i class="fa-solid fa-magnifying-glass fa-sm"></i></span>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px" fill="white"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path></svg>
+                </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px" fill="white"><path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609825 4 46 13.390175 46 25 C 46 36.609825 36.609825 46 25 46 C 22.876355 46 20.82771 45.682142 18.896484 45.097656 C 19.75673 43.659418 20.867347 41.60359 21.308594 39.90625 C 21.570728 38.899887 22.648438 34.794922 22.648438 34.794922 C 23.348841 36.132057 25.395277 37.263672 27.574219 37.263672 C 34.058123 37.263672 38.732422 31.300682 38.732422 23.890625 C 38.732422 16.78653 32.935409 11.472656 25.476562 11.472656 C 16.196831 11.472656 11.271484 17.700825 11.271484 24.482422 C 11.271484 27.636307 12.94892 31.562193 15.634766 32.8125 C 16.041611 33.001865 16.260073 32.919834 16.353516 32.525391 C 16.425459 32.226044 16.788267 30.766792 16.951172 30.087891 C 17.003269 29.871239 16.978043 29.68405 16.802734 29.470703 C 15.913793 28.392399 15.201172 26.4118 15.201172 24.564453 C 15.201172 19.822048 18.791452 15.232422 24.908203 15.232422 C 30.18976 15.232422 33.888672 18.832872 33.888672 23.980469 C 33.888672 29.796219 30.95207 33.826172 27.130859 33.826172 C 25.020554 33.826172 23.440361 32.080359 23.947266 29.939453 C 24.555054 27.38426 25.728516 24.626944 25.728516 22.78125 C 25.728516 21.130713 24.842754 19.753906 23.007812 19.753906 C 20.850369 19.753906 19.117188 21.984457 19.117188 24.974609 C 19.117187 26.877359 19.761719 28.166016 19.761719 28.166016 C 19.761719 28.166016 17.630543 37.176514 17.240234 38.853516 C 16.849091 40.52931 16.953851 42.786365 17.115234 44.466797 C 9.421139 41.352465 4 33.819328 4 25 C 4 13.390175 13.390175 4 25 4 z"></path></svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 0 14 15" width="50px" height="50px" fill="white"><path d="M 8 2 C 5.960938 2 4.15625 2.210938 3.058594 2.375 C 2.160156 2.507813 1.445313 3.210938 1.28125 4.113281 C 1.140625 4.902344 1 6.054688 1 7.5 C 1 8.945313 1.140625 10.097656 1.28125 10.886719 C 1.445313 11.789063 2.160156 12.488281 3.058594 12.625 C 4.160156 12.789063 5.972656 13 8 13 C 10.027344 13 11.835938 12.789063 12.9375 12.625 L 12.941406 12.625 C 13.839844 12.492188 14.554688 11.789063 14.71875 10.886719 C 14.859375 10.09375 15 8.941406 15 7.5 C 15 6.054688 14.859375 4.902344 14.714844 4.113281 C 14.554688 3.210938 13.839844 2.507813 12.941406 2.375 C 11.84375 2.210938 10.039063 2 8 2 Z M 8 3 C 9.96875 3 11.730469 3.203125 12.792969 3.363281 C 13.261719 3.433594 13.640625 3.800781 13.730469 4.289063 C 13.863281 5.027344 14 6.121094 14 7.5 C 14 8.878906 13.863281 9.972656 13.734375 10.707031 C 13.644531 11.199219 13.265625 11.566406 12.792969 11.636719 C 11.722656 11.792969 9.957031 12 8 12 C 6.042969 12 4.273438 11.792969 3.207031 11.636719 C 2.738281 11.566406 2.355469 11.199219 2.265625 10.707031 C 2.136719 9.96875 2 8.878906 2 7.5 C 2 6.117188 2.136719 5.027344 2.265625 4.289063 C 2.355469 3.800781 2.734375 3.433594 3.203125 3.367188 L 3.207031 3.367188 C 4.269531 3.207031 6.03125 3 8 3 Z M 6 5 L 6 10 L 11 7.5 Z"></path></svg>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </nav>
+
+      <!-- second nav -->
+       <section id="navigation">
+        <nav class="navbar nav-2">
+            <div class="container-fluid d-flex justify-content-center">
+              <ul>
+                <li class="li-1">Planning <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span></li>
+                <li class="li-3">Destinations <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span></li>
+                <li class="li-1">About <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span></li>
+                <li class="li-2">Video</li>
+                <li class="li-1">Inspiration</li>
+                <li class="li-1">Resources</li>
+                <li class="li-1">Shop <span class="circle"><i class="fa-solid fa-circle"></i></span> <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span></li>
+              </ul> 
+            </div>
+          </nav>
+       </section>
+      </section>
+
+
+    <!-- home section -->
+       <section id="home">
+            <div class="container custom-c1">
+                <div class="row">
+                    <div class="col-12">
+                    <div class="background-text">
+                    <svg role="img" class="welcome" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 954.19 253.11"><path d="M142.43,100.51,140.12,117q-2.15,16.93-4.07,34.51t-3.46,36.43q-1.53-17.9-3.92-37.55t-5.92-42.66L106.77,4H82.17L65.11,110.74q-2.47,14.85-4.54,32.43t-3.92,38.51l-.77,8c-.21-2.13-.36-3.88-.46-5.27s-.21-2.34-.31-2.88l-1.69-20.93q-.91-11.34-2.77-25.09L48,118.56,31.9,4H1L42.05,250.71H67.72L85.09,144.13q.3-1.11.92-5.75T87.7,125.6L90.93,102q.15-1.28.69-7.11t1.31-16.38c.1-1.17.25-2.66.46-4.48S93.8,70,94,67.59l.76,10.23c.52,5.86,1,10.7,1.47,14.54s.79,6.71,1,8.63l3.23,24.61q1.23,8.63,1.85,13.26c.41,3.09.66,4.85.77,5.27l16.75,106.58h24.91L186.7,4H156.11Z" transform="translate(-1 -0.64)" style="fill:#818181"></path><polygon points="204.46 250.07 289.47 250.07 289.47 221.95 236.44 221.95 236.44 137.74 283.48 137.74 283.48 109.62 236.44 109.62 236.44 31.48 289.47 31.48 289.47 3.35 204.46 3.35 204.46 250.07" style="fill:#818181"></polygon><polygon points="350.81 3.35 318.83 3.35 318.83 250.07 403.08 250.07 403.08 221.95 350.81 221.95 350.81 3.35" style="fill:#818181"></polygon><path d="M434.75,32.92q-17.61,32.28-17.61,98.43,0,122.4,72.1,122.4A50.45,50.45,0,0,0,515.07,247V216.52q-11.07,5.11-18.91,5.11-45,0-45-91.4a331.31,331.31,0,0,1,2.53-44q2.53-18.61,7.84-30.76t13.46-18q8.15-5.84,19.52-5.83,8.29,0,20.6,6.23V8A53.42,53.42,0,0,0,488.63.64Q452.35.64,434.75,32.92Z" transform="translate(-1 -0.64)" style="fill:#818181"></path><path d="M640.82,22.05Q626.38.81,596.54.8,563.18.8,549.2,28.28q-13.85,27.33-13.84,93.16,0,73.83,14,102.75,14.14,29.57,48.73,29.56,32.89,0,46.89-27.49t14-92.83q0-46.67-4.31-71Q650.35,36.28,640.82,22.05Zm-21.37,182.8q-6,18.54-22.14,18.54-16.44,0-22.44-19.82Q569,182.65,569,128.47q0-58.8,5.53-78.3,5.69-19.32,22.75-19.33t22.6,21.09q5.54,20.94,5.54,85Q625.45,186.47,619.45,204.85Z" transform="translate(-1 -0.64)" style="fill:#818181"></path><path d="M794.24,4l-18.6,98.92-3.54,17.73-4,26.85-4.46,28.28a16.55,16.55,0,0,0-.31,2.16c-.1,1-.26,2.42-.46,4.23q-2.61-20.78-5.77-39.71t-7-37.79L729.21,4H701.85L682.33,250.71h30.13l9.22-170q2.46,20.78,5.46,39.71T734,157.71l18.75,93h21.53l20-107.7,1.54-8.47,4-22.53c.52-3,1.1-6.65,1.77-11s1.41-9.48,2.23-15.34l.77-5c.1,1.18.18,2.11.23,2.8s.08,1.15.08,1.36l.77,30.36L807,148.29q0,3,.23,7.67t.54,11l5.38,83.73h30.59L821.91,4Z" transform="translate(-1 -0.64)" style="fill:#818181"></path><polygon points="954.2 31.48 954.2 3.35 869.18 3.35 869.18 250.07 954.2 250.07 954.2 221.95 901.16 221.95 901.16 137.74 948.2 137.74 948.2 109.62 901.16 109.62 901.16 31.48 954.2 31.48" style="fill:#818181"></polygon></svg>
+                </div>
+                <div class="main-image">
+                    <img src="./images/pete.webp" alt="">
+                </div>
+                <div class="main-text d-flex justify-content-between">
+                <div class="left-bottom-text">
+                    <svg class="name" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 355.88 80.7" role="img"><rect width="12.2" height="80.7" style="fill:#fff"></rect><polygon points="21.07 12.22 25.73 12.22 22.51 23.75 27.5 23.75 32.83 10.95 32.83 0 21.07 0 21.07 12.22" style="fill:#fff"></polygon><polygon points="67.54 57.29 58.55 0 41.59 0 41.59 80.7 52.23 80.7 52.23 23.63 61.33 80.7 72.86 80.7 81.29 22.82 81.29 80.7 92.82 80.7 92.82 0 75.85 0 67.54 57.29" style="fill:#fff"></polygon><path d="M140.8,2.89h-18v80.7H135V53.27h5.76c12.2,0,18.19-7,18.19-19.94V22.84C159,9.93,153,2.89,140.8,2.89Zm6,31.25c0,5.76-2.11,7.6-6,7.6H135V14.42h5.76c3.88,0,6,1.85,6,7.61Z" transform="translate(-3.95 -2.89)" style="fill:#fff"></path><polygon points="161.25 80.7 194.52 80.7 194.52 69.17 173.44 69.17 173.44 45.54 190.19 45.54 190.19 34.01 173.44 34.01 173.44 11.53 194.52 11.53 194.52 0 161.25 0 161.25 80.7" style="fill:#fff"></polygon><polygon points="198.51 11.53 211.26 11.53 211.26 80.7 223.46 80.7 223.46 11.53 236.22 11.53 236.22 0 198.51 0 198.51 11.53" style="fill:#fff"></polygon><polygon points="241.54 80.7 274.81 80.7 274.81 69.17 253.74 69.17 253.74 45.54 270.48 45.54 270.48 34.01 253.74 34.01 253.74 11.53 274.81 11.53 274.81 0 241.54 0 241.54 80.7" style="fill:#fff"></polygon><path d="M340.09,61.34c0-8.41-2-14.52-8.09-17.18,5.43-2.65,8-8.06,8-16.37V21.45C340,9,334.55,2.89,321.9,2.89H303.49v80.7h12.2V50.74h4.22c5.54,0,8,2.76,8,10.26V73.68c0,6.57.45,7.84,1.11,9.91h12.42c-1.22-3-1.33-5.88-1.33-9.8ZM327.78,30.68c0,6.45-2.77,8.53-7.32,8.53h-4.77V14.42h5.88c4.33,0,6.21,2.54,6.21,8.3Z" transform="translate(-3.95 -2.89)" style="fill:#fff"></path><rect x="344.12" y="68.48" width="11.75" height="12.22" style="fill:#fff"></rect></svg>
+                    <p>I create travel guides and backpacking itineraries from around the world,
+                        as well as sharing photography resources and more.
+                    </p>
+                    <div class="buttons">
+                    <button class="read"><span>READ MY BLOG</span></button>
+                    <button class="watch"><span>WATCH MY VIDEOS</span></button>
+                    </div>
+                </div>
+                <div class="right-content">
+                  <div class="right-text">
+                    <p>I am a travel blogger based in Thailand, Specializing in backpacking, hiking, and photography. <span>Learn more here.</span></p>
+                  </div>
+                  <div class="latest-video">
+                    <img src="./images/latest-video.webp" class="img-1" alt="">
+                    <a href="" class="play"><i class="fa-solid fa-play"></i></a>
+                    <span>Latest Video</span>
+                  </div>
+                  <div class="based">
+                    <div class="based-content">
+                      <img src="./images/made-in.svg" alt="">
+                    <span>Based <br> in Thailand</span>
+                    </div>
+                    
+                  </div>
+                </div>
+                </div>
+               </div>
+             </div>
+
+            </div>
+            <div class="diag-line">
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1367 172.7"><path d="M1367 172.7v-14.6C385.1 158.1 0 0 0 0v172.7z" fill="#1d1f26"/></svg>
+          </div>
+       </section>
+      </section>
+
+      <!-- Countries Section -->
+       <section id="countries">
+        <div class="container custom-c2">
+          <div class="caption-1">
+            <h1>WHERE DO YOU WANT TO GO?</h1>
+          </div>
+          <div class="row custom-row1">
+            <div class="col-12">
+              <ul>
+                <li>
+                  <div class="country-icon">
+                    <img src="./images/icon-thailand.svg" alt="">
+                  </div>
+                  <div class="countryname">
+                    <p>THAILAND</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="country-icon">
+                    <img src="./images/icon-italy.svg" alt="">
+                  </div>
+                  <div class="countryname">
+                  <p>ITALY</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="country-icon">
+                    <img src="./images/icon-iceland.svg" alt="">
+                  </div>
+                  <div class="countryname">
+                    <p>ICELAND</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="country-icon">
+                    <img src="./images/icon-albania.svg" alt="">
+                  </div>
+                  <div class="countryname">
+                    <p>ALBANIA</p>
+                  </div>  
+                </li>
+
+                <li>
+                  <div class="country-icon">
+                    <img src="./images/icon-southeast-asia.svg" alt="">
+                  </div>
+                  <div class="countryname">
+                  <p>SOUTHEAST <br> ASIA</p>
+                </div>
+                </li>
+                
+                <li>
+                  <div class="country-icon">
+                    <img src="./images/icon-europe.svg" alt="">
+                  </div>
+                  <div class="countryname">
+                    <p>EUROPE</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="country-icon">
+                    <img src="./images/icon-south-america.svg" alt="">
+                  </div>
+                  <div class="countryname">
+                    <p>SOUTH <br> AMERICA</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="country-icon">
+                    <img src="./images/icon-central-asia.svg" alt="">
+                  </div>
+                  <div class="countryname">
+                    <p>CENTRAL <br> ASIA</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="country-icon icon-end">
+                    <svg width="30" height="30" class="svg-dark-contrast " enable-background="new 0 0 19 18" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg"><path d="m9.3.3c-.4.4-.4 1 0 1.4l6.3 6.3h-14.6c-.6 0-1 .4-1 1s.4 1 1 1h14.6l-6.3 6.3c-.4.4-.4 1 0 1.4s1 .4 1.4 0l8-8c.1-.1.2-.2.2-.3.1-.1.1-.3.1-.4s0-.3-.1-.4c0-.1-.1-.2-.2-.3l-8-8c-.4-.4-1-.4-1.4 0z" fill="#c3c3c3"></path></svg>
+                  </div>
+                  <div class="countryname">
+                    <p>EXPLORE <br> MORE</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="discover">
+            <div class="row">
+              <div class="col-12">
+                <div class="discover-content">
+                <div class="left-image">
+                  <img src="./images/world-map.svg" alt="">
+                </div>
+                <div class="right-content2">
+                  <div class="right-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.47 176.18" role="img"><g opacity="1"><path d="M134.3 122.88v1.48a9.28 9.28 0 0 0-3.58 2.84 17.32 17.32 0 0 0-2.91 5.94l-13 42.14c-.54 0-1.4-.08-2.58-.08l-2.6.08-10.83-32.92-10.92 32.92c-.55 0-1.4-.08-2.6-.08l-2.58.08-16.53-46.2a8.47 8.47 0 0 0-2.17-3.54 4.18 4.18 0 0 0-2.51-1.18v-1.48c3 .15 6.62.23 11 .22l9.07-.22v1.48a2.66 2.66 0 0 0-2.56 2.73v.15a12.17 12.17 0 0 0 .67 3.32l10.77 31.2 7.45-22-3.76-11.44a6.74 6.74 0 0 0-1.74-3 4.16 4.16 0 0 0-2.32-1v-1.48c2.75.15 6.27.23 10.55.22q7.23 0 10.63-.22v1.48a10.46 10.46 0 0 0-3.84.63 2.09 2.09 0 0 0-1.18 2.1 11.16 11.16 0 0 0 .74 3.47l10.1 30.84 7-22.28a31.65 31.65 0 0 0 1.7-8.56q0-3.18-1.6-4.6a7.47 7.47 0 0 0-4.76-1.59v-1.48c3.33.15 6.38.23 9.15.22l5.7-.2zm42.1 2.15a22.23 22.23 0 0 1 9.11 9.19 29.68 29.68 0 0 1 3.25 14.35 30.34 30.34 0 0 1-3.32 14.39 24.06 24.06 0 0 1-9.26 9.74 26.24 26.24 0 0 1-13.54 3.47 28.33 28.33 0 0 1-13.64-3.14 22.25 22.25 0 0 1-9.12-9.19 29.9 29.9 0 0 1-3.24-14.35 30.26 30.26 0 0 1 3.27-14.46 24.06 24.06 0 0 1 9.26-9.74 26.44 26.44 0 0 1 13.54-3.47 28.45 28.45 0 0 1 13.69 3.21zm-21.14 1.44a21.6 21.6 0 0 0-4.76 9.19 49.61 49.61 0 0 0-1.66 13.5 43.86 43.86 0 0 0 1.88 13.51 21.88 21.88 0 0 0 5.09 9 9.88 9.88 0 0 0 7.12 3.17 9.59 9.59 0 0 0 7.16-3.28 21.77 21.77 0 0 0 4.76-9.19 49.61 49.61 0 0 0 1.66-13.5 44.16 44.16 0 0 0-1.88-13.51 22 22 0 0 0-5.09-9 10 10 0 0 0-7.13-3.17 9.57 9.57 0 0 0-7.15 3.28zm88.64 45.4a12.2 12.2 0 0 1-4.28 3.29 13.8 13.8 0 0 1-5.53 1 11.12 11.12 0 0 1-6.75-1.81c-1.65-1.2-2.72-3.26-3.2-6.16l-1.33-7.38a28.15 28.15 0 0 0-2.33-7.93 4.74 4.74 0 0 0-4.54-2.55h-4.8v17a14.52 14.52 0 0 0 .4 4 2.54 2.54 0 0 0 1.46 1.7 12.63 12.63 0 0 0 3.61.59v1.48c-2.65-.15-6.37-.22-11.14-.22-5.27 0-9.15.07-11.66.22v-1.48a12.42 12.42 0 0 0 3.58-.59 2.56 2.56 0 0 0 1.55-1.7 14.52 14.52 0 0 0 .4-4.05v-36.6a14.59 14.59 0 0 0-.4-4.06 2.56 2.56 0 0 0-1.55-1.7 12.42 12.42 0 0 0-3.58-.59v-1.5c2.51.15 6.25.23 11.22.22l8.2-.07c1.13 0 2.27-.07 3.4-.07q10.2 0 15.3 3.32a10.66 10.66 0 0 1 5.13 9.52 12.93 12.93 0 0 1-3.83 9.22q-3.84 4-12.7 5 6.65.59 9.9 2.88a10.63 10.63 0 0 1 4.21 6.86l1.7 7.6a12.55 12.55 0 0 0 1.36 4.13 2.45 2.45 0 0 0 2.18 1.18 3.48 3.48 0 0 0 1.51-.44 6.35 6.35 0 0 0 1.44-1.25zm-31.1-47a2.81 2.81 0 0 0-1.29 1.84 15.82 15.82 0 0 0-.37 4v18.15h3.17q6 0 8.3-3.2t2.25-9c0-4-.7-7.1-2.14-9.15s-3.76-3.1-7-3.1a6.21 6.21 0 0 0-2.92.47zm55.37-.52a14.59 14.59 0 0 0-3.88.59 2.63 2.63 0 0 0-1.66 1.7 13.54 13.54 0 0 0-.44 4.06v37.48a11.33 11.33 0 0 0 .37 3.43 2.23 2.23 0 0 0 1.29 1.44 8.71 8.71 0 0 0 3 .37h3.62q5 0 8.67-4.5t4.76-12h1.7l-.22 6.5a105.57 105.57 0 0 0 .52 11.66q-5-.23-16.9-.22-16.1 0-24.06.22v-1.48a12.42 12.42 0 0 0 3.58-.59 2.56 2.56 0 0 0 1.55-1.7 14.16 14.16 0 0 0 .41-4.05v-36.6a14.23 14.23 0 0 0-.41-4.06 2.56 2.56 0 0 0-1.55-1.7 12.42 12.42 0 0 0-3.58-.59v-1.48c2.51.15 6.4.23 11.66.22q7.53 0 11.6-.22zm66.2 5.05q7.15 6.54 7.16 19a27.42 27.42 0 0 1-3.51 14 23.63 23.63 0 0 1-10.11 9.34 34.82 34.82 0 0 1-15.75 3.29l-4.58-.08-6.2-.14q-7.61 0-11.37.22v-1.48a12.42 12.42 0 0 0 3.58-.59 2.56 2.56 0 0 0 1.55-1.7 14.16 14.16 0 0 0 .41-4v-36.6a14.23 14.23 0 0 0-.41-4.06 2.56 2.56 0 0 0-1.55-1.7 12.42 12.42 0 0 0-3.58-.59v-1.48l8.93.22h2.3l3-.07q6-.15 8.63-.15 14.36.06 21.5 6.6zm-25-4.68a2.92 2.92 0 0 0-1.59 1.84 13.8 13.8 0 0 0-.44 4v36.9a13.8 13.8 0 0 0 .44 4 2.92 2.92 0 0 0 1.59 1.84 8.87 8.87 0 0 0 3.5.52q8.92 0 12.7-6.24t3.77-18.85q0-12.62-3.88-18.56t-12.65-5.94a8.42 8.42 0 0 0-3.48.5z" fill="#edbf22"></path><path d="M44.35 7.59q7.17 6.54 7.16 19A27.44 27.44 0 0 1 48 40.65a23.84 23.84 0 0 1-10.1 9.38 34.86 34.86 0 0 1-15.76 3.32l-4.57-.08-6.2-.14q-7.6 0-11.37.22v-1.5a12.42 12.42 0 0 0 3.58-.59 2.52 2.52 0 0 0 1.55-1.69 14.23 14.23 0 0 0 .41-4.06V8.89a14.23 14.23 0 0 0-.41-4.06 2.51 2.51 0 0 0-1.55-1.7A13 13 0 0 0 0 2.54V1.03c2.07.15 5 .23 8.93.23h2.27l2.95-.08 8.65-.15q14.4 0 21.54 6.57zm-25-4.68a3 3 0 0 0-1.59 1.84 13.8 13.8 0 0 0-.44 4v36.88a13.8 13.8 0 0 0 .44 4 2.92 2.92 0 0 0 1.59 1.84 8.74 8.74 0 0 0 3.51.52q8.92 0 12.7-6.23t3.76-18.86q0-12.6-3.87-18.56t-12.7-6a8.71 8.71 0 0 0-3.43.52zm60.05-.38a12.69 12.69 0 0 0-3.62.59 2.57 2.57 0 0 0-1.51 1.7 14.23 14.23 0 0 0-.41 4.06v36.6a14.23 14.23 0 0 0 .41 4.06 2.55 2.55 0 0 0 1.51 1.69 12.69 12.69 0 0 0 3.62.59v1.48c-2.67-.15-6.38-.23-11.15-.22-5.27 0-9.15.07-11.66.22v-1.47a12.42 12.42 0 0 0 3.58-.59 2.54 2.54 0 0 0 1.55-1.69 14.23 14.23 0 0 0 .41-4.06V8.89a14.23 14.23 0 0 0-.41-4.06 2.56 2.56 0 0 0-1.55-1.7 13.15 13.15 0 0 0-3.58-.59V1.03q3.77.22 11.66.23 7.16 0 11.15-.23zm29.52-1.7a22.92 22.92 0 0 1 4.65 2.2l1.44.74a2.53 2.53 0 0 0 1.07.3 1.13 1.13 0 0 0 1-.78 8.41 8.41 0 0 0 .59-2.47h1.7Q119 5.71 119 17.58h-1.7a24.31 24.31 0 0 0-1.8-7.6 14.83 14.83 0 0 0-4.28-5.86 10 10 0 0 0-6.46-2.25 8.44 8.44 0 0 0-5.87 2 7 7 0 0 0-2.25 5.5 8.74 8.74 0 0 0 1.11 4.5 12.54 12.54 0 0 0 3.1 3.51q2 1.61 6.12 4.32l2.36 1.62a71.69 71.69 0 0 1 6.87 5 18.1 18.1 0 0 1 4.09 5 13.31 13.31 0 0 1 1.59 6.6 12.67 12.67 0 0 1-2.44 7.93 14.81 14.81 0 0 1-6.6 4.84 25.46 25.46 0 0 1-9.26 1.62 26.87 26.87 0 0 1-6.86-.74 22 22 0 0 1-5-2 5.35 5.35 0 0 0-2.51-1 1.14 1.14 0 0 0-1 .77 8.47 8.47 0 0 0-.59 2.48h-1.7q.28-4.65.3-19.93h1.7q.5 8.27 3.7 13.4t9.74 5.12a9.88 9.88 0 0 0 6.64-2.14 7.49 7.49 0 0 0 2.58-6.12 10.19 10.19 0 0 0-2.71-7.12 42.49 42.49 0 0 0-8.41-6.64q-4.42-2.88-7.08-5A18.44 18.44 0 0 1 88 20.37a13.18 13.18 0 0 1-1.69-6.75 12.31 12.31 0 0 1 2.21-7.5 13.36 13.36 0 0 1 6-4.54A22.45 22.45 0 0 1 102.79.1a20.77 20.77 0 0 1 6.13.74zm52.84.46a25.54 25.54 0 0 1 6 3.54 2.38 2.38 0 0 0 1.4.66c1 0 1.62-1.47 1.92-4.43h1.7q-.3 5-.3 17.86h-1.7a36.55 36.55 0 0 0-1.78-8.34 11.84 11.84 0 0 0-3.76-5A12.65 12.65 0 0 0 161 2.87a14.5 14.5 0 0 0-5.09-.92q-7.45 0-11.07 7.27t-3.62 18.1q0 10.8 3.77 18t11.2 7.23a14.47 14.47 0 0 0 5-.92 11.06 11.06 0 0 0 4.17-2.69 10.78 10.78 0 0 0 3.8-5.17 41.26 41.26 0 0 0 1.66-9.08h1.7q0 13.37.3 18.6h-1.7a13.29 13.29 0 0 0-.63-3.36c-.27-.67-.65-1-1.14-1a3.1 3.1 0 0 0-1.55.59 31.45 31.45 0 0 1-6.35 3.57 19.33 19.33 0 0 1-7.3 1.22 28.33 28.33 0 0 1-13.69-3.17 22.27 22.27 0 0 1-9.12-9.11 29.9 29.9 0 0 1-3.24-14.35 30.22 30.22 0 0 1 3.32-14.39 24.06 24.06 0 0 1 9.26-9.74A26.34 26.34 0 0 1 154.22.03a20.15 20.15 0 0 1 7.53 1.27zm58.18 1.9a22.16 22.16 0 0 1 9.06 9.19 29.68 29.68 0 0 1 3.25 14.35A30.33 30.33 0 0 1 229 41.12a24.06 24.06 0 0 1-9.26 9.74 26.24 26.24 0 0 1-13.54 3.47 28.33 28.33 0 0 1-13.69-3.17 22.17 22.17 0 0 1-9.13-9.13 29.68 29.68 0 0 1-3.25-14.35 30.34 30.34 0 0 1 3.32-14.39 24.06 24.06 0 0 1 9.26-9.74A26.34 26.34 0 0 1 206.25.03a28.43 28.43 0 0 1 13.69 3.18zM198.8 4.63a21.75 21.75 0 0 0-4.8 9.19 49.61 49.61 0 0 0-1.66 13.5 44.16 44.16 0 0 0 1.88 13.51 22 22 0 0 0 5.09 9 9.94 9.94 0 0 0 7.16 3.2 9.54 9.54 0 0 0 7.16-3.28 21.77 21.77 0 0 0 4.76-9.19A49.8 49.8 0 0 0 220 27.03a44.16 44.16 0 0 0-1.88-13.51 21.88 21.88 0 0 0-5.09-9 10 10 0 0 0-7.12-3.17 9.57 9.57 0 0 0-7.11 3.28zm85.08-3.6v1.5a8.72 8.72 0 0 0-3.61 2.8 20.48 20.48 0 0 0-3.18 6l-15.57 42.12c-.54 0-1.4-.08-2.58-.08l-2.5.08-18.8-46.2a9.32 9.32 0 0 0-2.22-3.54A4.16 4.16 0 0 0 233 2.53v-1.5c3 .15 6.69.23 11.2.23q7.6 0 11.22-.23v1.5a13 13 0 0 0-4 .66 2 2 0 0 0-1.18 2.07 10.16 10.16 0 0 0 .89 3.47l13 33.06 9.07-24.5a28.22 28.22 0 0 0 2.07-9 5.29 5.29 0 0 0-1.6-4.26 7.58 7.58 0 0 0-4.67-1.5v-1.5c3.33.15 6.41.23 9.22.23a39.86 39.86 0 0 0 5.67-.23zm42.72 52.28q-5-.22-16.9-.22-16.09 0-24.06.22v-1.48a12.42 12.42 0 0 0 3.58-.59 2.54 2.54 0 0 0 1.55-1.69 14.23 14.23 0 0 0 .41-4.06V8.89a14.23 14.23 0 0 0-.41-4.06 2.56 2.56 0 0 0-1.55-1.7 13.15 13.15 0 0 0-3.58-.59V1.03q8 .22 24.06.23 10.85 0 15.42-.23c-.33 4.09-.5 7.74-.5 10.93a43.92 43.92 0 0 0 .22 5h-1.7q-1.14-7.93-4-11.07T311 2.77h-3a10.63 10.63 0 0 0-3.32.37 2.23 2.23 0 0 0-1.4 1.44 11.47 11.47 0 0 0-.36 3.45v18.3h2.36a6.81 6.81 0 0 0 5.94-2.88 17.79 17.79 0 0 0 2.8-6.88h1.7c-.15 2.07-.23 4.38-.22 6.94v3.52c0 2.51.15 6 .44 10.48h-1.7q-1.56-9.75-9-9.74h-2.33v18.6a11.33 11.33 0 0 0 .37 3.43 2.21 2.21 0 0 0 1.4 1.44 10.63 10.63 0 0 0 3.32.37h3.62a10.81 10.81 0 0 0 8.45-3.58q3.19-3.57 4.54-12.14h1.7l-.22 6.2a98 98 0 0 0 .52 11.23zm55.87-3.28a12.41 12.41 0 0 1-4.28 3.29 13.81 13.81 0 0 1-5.54 1 11.19 11.19 0 0 1-6.75-1.81c-1.65-1.2-2.71-3.25-3.2-6.16l-1.34-7.32a28.3 28.3 0 0 0-2.36-8 4.74 4.74 0 0 0-4.54-2.55h-4.8v17a14.23 14.23 0 0 0 .41 4.06 2.55 2.55 0 0 0 1.51 1.69 12.69 12.69 0 0 0 3.62.59v1.48c-2.67-.15-6.38-.23-11.14-.22-5.27 0-9.15.07-11.66.22v-1.47a12.78 12.78 0 0 0 3.58-.59 2.56 2.56 0 0 0 1.55-1.69 14.59 14.59 0 0 0 .4-4.06V8.89a14.59 14.59 0 0 0-.4-4.06 2.59 2.59 0 0 0-1.53-1.7 13.21 13.21 0 0 0-3.58-.59V1.03c2.5.15 6.24.23 11.2.23l8.2-.08c1 0 2.12-.07 3.4-.07q10.18 0 15.3 3.32a10.64 10.64 0 0 1 5.13 9.6 12.89 12.89 0 0 1-3.84 9.22q-3.84 4-12.7 5 6.64.6 9.9 2.88a10.66 10.66 0 0 1 4.2 6.86l1.7 7.6a12.27 12.27 0 0 0 1.37 4.13 2.44 2.44 0 0 0 2.17 1.18 3.39 3.39 0 0 0 1.52-.44 6.83 6.83 0 0 0 1.43-1.25zm-31.1-47a2.87 2.87 0 0 0-1.29 1.84 16.3 16.3 0 0 0-.37 4v18.16h3.18q6 0 8.3-3.2t2.25-9q0-6-2.14-9.15t-7-3.1a6.12 6.12 0 0 0-2.93.46zM70 74.65l.22 5.6h-1.7q-1.77-9.07-4.83-12.77a10.28 10.28 0 0 0-8.37-3.69h-1.7v42.14a11.64 11.64 0 0 0 .63 4.5 3.31 3.31 0 0 0 2.21 1.88 20.91 20.91 0 0 0 5.05.56v1.47q-9.3-.23-14-.22t-13.5.22v-1.47a20.56 20.56 0 0 0 5-.56 3.37 3.37 0 0 0 2.22-1.88 11.64 11.64 0 0 0 .63-4.5V63.8H40.3a11.17 11.17 0 0 0-6 1.55 12.37 12.37 0 0 0-4.3 5.13 41.31 41.31 0 0 0-3 9.78h-1.7c.15-1.43.22-3.3.22-5.6q0-5.53-.5-12.54 6.7.19 22.8.22t22.73-.22Q70 69.13 70 74.66zm55.45-10.48a2.57 2.57 0 0 0-1.51 1.7 14.23 14.23 0 0 0-.41 4.06v36.6a14.23 14.23 0 0 0 .41 4.06 2.57 2.57 0 0 0 1.51 1.7 12.63 12.63 0 0 0 3.61.59v1.47c-2.41-.15-6.15-.22-11.2-.22s-8.93.07-11.6.22v-1.47a13.15 13.15 0 0 0 3.58-.59 2.58 2.58 0 0 0 1.55-1.7 14.23 14.23 0 0 0 .41-4.06v-17.7H92.26v17.7a14.23 14.23 0 0 0 .41 4.06 2.57 2.57 0 0 0 1.51 1.7 12.69 12.69 0 0 0 3.62.59v1.47c-2.67-.15-6.38-.22-11.15-.22-5.27 0-9.15.07-11.66.22v-1.47a13.15 13.15 0 0 0 3.58-.59 2.56 2.56 0 0 0 1.55-1.7 14.23 14.23 0 0 0 .41-4.06v-36.6a14.23 14.23 0 0 0-.41-4.06 2.56 2.56 0 0 0-1.55-1.7 13 13 0 0 0-3.57-.59v-1.47c2.5.14 6.4.22 11.66.22 4.77 0 8.5-.08 11.15-.22v1.47a12.69 12.69 0 0 0-3.62.59 2.57 2.57 0 0 0-1.51 1.7 14.23 14.23 0 0 0-.41 4.06v17.4h19.53v-17.4a14.23 14.23 0 0 0-.41-4.06 2.56 2.56 0 0 0-1.55-1.7 13.15 13.15 0 0 0-3.58-.59v-1.47c2.76.14 6.62.22 11.6.22s8.8-.08 11.2-.22v1.47a12.63 12.63 0 0 0-3.61.59zM175 114.35q-5-.22-16.9-.22-16.08 0-24.05.22v-1.47a13.21 13.21 0 0 0 3.58-.59 2.63 2.63 0 0 0 1.55-1.7 14.59 14.59 0 0 0 .4-4.06v-36.6a14.59 14.59 0 0 0-.4-4.06 2.58 2.58 0 0 0-1.55-1.7 13.21 13.21 0 0 0-3.58-.59v-1.47q8 .2 24.05.22 10.86 0 15.43-.22-.53 6.12-.53 10.92a43.92 43.92 0 0 0 .22 5h-1.7q-1.09-7.91-4-11.07t-8.12-3.18h-3a10.93 10.93 0 0 0-3.32.37 2.25 2.25 0 0 0-1.41 1.44 11.68 11.68 0 0 0-.36 3.43v18.3h2.36a6.86 6.86 0 0 0 5.94-2.87 18.13 18.13 0 0 0 2.84-6.87h1.7L164 84.5v3.53q0 3.77.45 10.48h-1.7q-1.55-9.74-9-9.74h-2.36v18.6a11.68 11.68 0 0 0 .36 3.43 2.25 2.25 0 0 0 1.41 1.44 10.92 10.92 0 0 0 3.32.36H160a10.81 10.81 0 0 0 8.45-3.57q3.2-3.6 4.54-12.14h1.7c-.15 1.62-.22 3.7-.22 6.2a100.63 100.63 0 0 0 .53 11.25z" fill="#c3c3c3"></path></g></svg>
+                  </div>
+                  <div class="right-text2">
+                    <p>We have written over 600+ travel guides and backpacking itineraries to provide all the information you need to help plan your dream trip around the world.</p>
+                  </div>
+                  <div class="right-button">
+                    <button class="watch"><span>EXPLORE DESTINATIONS <i class="fa-solid fa-arrow-right"></i></span></button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Videos section -->
+         <section id="videos">
+          <div class="container custom-c3">
+            <div class="videos-content">
+            <div class="large-heading">
+              <span>MY STORY</span>
+            </div>
+            <div class="main-video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/domgua2BY8k?si=cJdIVGbuajqM3M2y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="sub-videos">
+              <div class="row">
+                <div class="col-12">
+                  <ul>
+                    <li>
+                      <img src="./images/first-video-image.webp" alt="">
+                    </li>
+                    <li>
+                      <img src="./images/second-video-image.webp" alt="">
+                    </li>
+                    <li><img src="./images/third-video-image.webp" alt="">
+                    </li>
+                    <li>
+                      <img src="./images/fourth-image.jpg" alt="">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="watch-more-btn">
+              <button><span> WATCH MORE <i class="fa-solid fa-arrow-right"></i></span></button>
+            </div>
+
+            <div class="featured-heading">
+              <span>AS FEATURED ON</span>
+            </div>
+
+            <div class="channels">
+              <div class="row">
+                <div class="col-12">
+                  <ul>
+                    <li>
+                      <img src="./images/vimeo.png" alt="">
+                    </li>
+                    <li>
+                      <img src="./images/outside.png" alt="">
+                    </li>
+                    <li>
+                      <img src="./images/bbc.png" alt="">
+                    </li>
+                    <li>
+                      <img src="./images/nat-geo.png" alt="">
+                    </li>
+                    <li>
+                      <img src="./images/cnn.png" alt="">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+         </section>
+         
+
+         <!-- Most popular Section -->
+          <section id="popular">
+            <div class="shadow"></div>
+            <div class="container custom-c4">
+              <div class="popular-content">
+                <div class="popular-heading">
+                  <span>MOST POPULAR</span>
+                </div>
+                <div class="row">
+                  <!-- c1 -->
+                  <div class="card">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>INSPIRATION</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>24 Most Beautiful Travel Blogs to Follow 2024</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on January 31, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c2 -->
+                  <div class="card card-2">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>THAILAND</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>10 BEST Places to Visit in Southern Thailand</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on January 2, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c3 -->
+                  <div class="card card-3">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>BULGARIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>12 Impressive Things to Do in Sofia for Solo Travelers</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on October 26, 2023</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c4 -->
+                  <div class="card card-4">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>INDONESIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>One Month Backpacking Indonesia Itinerary for Solo Travelers</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on October 23, 2023</span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </section>
+
+          <!-- Recent posts section -->
+           <section id="recent">
+            <div class="container custom-c5">
+              <div class="recent-content">
+                <div class="recent-heading">
+                  <span>RECENT POSTS</span>
+                </div>
+                <div class="recent-main">
+                <div class="recent-img">
+                  <div class="img-shadow"></div>
+                  <img src="./images/recent-main.webp" alt="">
+                  <div class="text-content">
+                    <div class="small-heading">
+                     <span>INSPIRATION</span>
+                    </div>
+                      <div class="large-heading">
+                        <span>30 Inspirational Hiking Quotes And Captions For Instagram</span>
+                      </div>
+                      <div class="sub-heading">
+                       <span>The Best Quotes For Reels, Tiktok, Or Photo Caption</span>
+                      </div>
+                  </div>
+                </div>
+                <!-- cards -->
+                 <!-- row-1 -->
+                <div class="row r-1">
+                  <!-- c1 -->
+                  <div class="card c-1">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>SAUDI ARABIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>15 Best Places To Visit In Saudi Arabia</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 18, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c2 -->
+                  <div class="card c-2">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>SAUDI ARABIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>2 Weeks In Saudi Arabia Itinerary</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 16, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c3 -->
+                  <div class="card c-3">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>SAUDI ARABIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>9 Impressive Things To Do In Jeddah, Saudi Arabia For First-Timers</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 11, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c4 -->
+                  <div class="card c-4">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>SAUDI ARABIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>10 Incredible Things To Do In AlUla, Saudi Arabia For First-Timers</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 9, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                </div>  
+
+                <!-- row-2 -->
+                <div class="row r-2">
+                  <!-- c1 -->
+                  <div class="card c-1">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>Uzbekistan</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>2 Weeks Backpacking Uzbekistan</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 4, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c2 -->
+                  <div class="card c-2">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>Kyrgyzstan</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>3 Weeks Backpacking Kyrgyzstan Itinerary</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 4, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c3 -->
+                  <div class="card c-3">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>CENTRAL ASIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>One Month Backpacking Central Asia Itinerary</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 4, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c4 -->
+                  <div class="card c-4">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>SAUDI ARABIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>One Month Backpacking Indonesia Itinerary for Solo Travelers</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 4, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <!-- row-3 -->
+                <div class="row r-3">
+                  <!-- c1 -->
+                  <div class="card c-1">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>SAUDI ARABIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>Renting A Car In Saudi Arabia: 19 Things To Know</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on July 2, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c2 -->
+                  <div class="card c-2">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>PHOTOGRAPHY</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>3 Best Food Photography Lenses For Sony In 2024</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on June 27, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c3 -->
+                  <div class="card c-3">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>INDONESIA</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>10 BEST Places To Visit In Bali</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on June 25, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c4 -->
+                  <div class="card c-4">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>PHOTOGRAPHY</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>7 BEST Sony FX3 Lenses To Buy In 2024</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on June 20, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <!-- row-4 -->
+                <div class="row r-4">
+                  <!-- c1 -->
+                  <div class="card c-1">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>RESOURCES</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>14 BEST Sony Camera Accessories You Should Buy</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on June 19, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c2 -->
+                  <div class="card c-2">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>PHOTOGRAPHY</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>9 BEST Sony FX30 Lenses To Buy In 2024</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on June 18, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c3 -->
+                  <div class="card c-3">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>QATAR</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>10 Fantastic Things To Do In Doha, Qatar For Solo Travelers</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on June 13, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- c4 -->
+                  <div class="card c-4">
+                    <div class="card-shadow"></div>
+                    <div class="all-text">
+                    <div class="small-title">
+                      <span>BAHRAIN</span> 
+                    </div>
+                    <div class="larger-title">
+                     <span>10 Impressive Things To Do In Bahrain For Solo Travelers</span> 
+                    </div>
+                    <div class="by">
+                      <span>By Pete R. on June 11, 2024</span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="older-posts">
+                  <button class="older"><span>OLDER POSTS <i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+
+              </div>
+              </div>
+            </div>
+           </section>
+
+           <!-- Footer Section -->
+            <section id="footer">
+              <div class="shadow-overlay"></div>
+              <div class="footer-c">
+                <div class="footer-d">
+                <div class="container custom-c5">
+                  <div class="footer-content">
+                      <div class="first-title">
+                        <span>Join BucketListly Blog Newsletter Today</span>
+                      </div>
+                      <div class="second-title">
+                        <p>GET A <span>FREE</span> <br> LIGHTROOM PRESET</p>
+                      </div>
+                      <div class="third-title">
+                        Join our community of over 4,500 readers and receive a <span> free <br> Lightroom preset</span> from us. In addition, you'll get travel news, <br> updates, and captivating travel stories from around the world.
+                      </div>
+                      <div class="input-boxes">
+                        <input type="text" placeholder="Name" class="name">
+                        <input type="text" placeholder="Email Address" class="email">
+                      </div>
+                      <div class="buttons">
+                        <button class="subscribe"><span>SUBSCRIBE</span></button>
+                        <button class="why"> <span>WHY SUBSCRIBE <i class="fa-solid fa-arrow-right"></i></span> </button>
+                      </div>
+                      <div class="fourth-title">
+                        This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+                      </div>
+                  </div>
+                </div>
+                <div class="container custom-c6">
+                  <div class="footer-2">
+                  <div class="footer-links">
+                    <div class="footer-links-content">
+                    <div class="footer-link-title">
+                      <span>POPULAR ITINERARIES</span>
+                    </div>
+                    <!-- 1 -->
+                    <div class="footer-link-items">
+                      <ul>
+                        <li>3 Months Itinerary in Europe</li>
+                        <li>2 Weeks Itinerary for Albania</li>
+                        <li>2 Weeks Greece Itinerary</li>
+                        <li>One Month in Italy</li>
+                        <li>7 Days Iceland's Ring Road Itinerary</li>
+                        <li>6 Months South America Itinerary</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                    <div class="footer-links-content">
+                    <div class="footer-link-title">
+                      <span>TOP DESTINATIONS</span>
+                    </div>
+                    <div class="footer-link-items">
+                      <ul>
+                        <li>Albania Travel Guide</li>
+                        <li>Italy Travel Guide</li>
+                        <li>Greece Travel Guide</li>
+                        <li>Iceland Travel Guide</li>
+                        <li>Thailand Travel Guide </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                    <div class="footer-links-content">
+                    <div class="footer-link-title">
+                      <span>ABOUT</span>
+                    </div>
+                    <div class="footer-link-items">
+                      <ul>
+                        <li>About Me</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms</li>
+                        <li>Web Stories</li>
+                        <li>Best Travel Gear</li>
+                        <li>Lightroom Presets</li>
+                        <li>What's in My Camera Backpack?</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                    <div class="footer-links-content">
+                    <div class="footer-link-title">
+                      <span>STAY CONNECTED</span>
+                    </div>
+                    <div class="footer-link-items">
+                      <ul>
+                        <li><i class="fa-brands fa-instagram"></i> 
+                          <i class="fa-brands fa-youtube"></i>
+                          <i class="fa-brands fa-facebook"></i>
+                          <i class="fa-brands fa-x-twitter"></i>
+                          <i class="fa-brands fa-pinterest-p"></i></li>
+                        <li>Sign Up For My Newsletter</li>
+                        <li>Work With Me</li>
+                        <li>Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="copyright-content">
+                  <div class="copyright-text">
+                   <p> © 2012–2024 <span>BucketListly Blog</span>. All rights reserved. Made with <i class="fa-solid fa-heart"></i> by <span>The Pete Design</span> </p>
+                  </div>
+                  <div class="theme">
+                    <div class="theme-text">
+                    <span><svg width="20" height="20" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#c4cecf" d="M19.8 11.9c-1.1-1.1-2.7-1.8-4.3-1.8s-3.2.7-4.3 1.8c-1.1 1.1-1.8 2.7-1.8 4.3 0 1.7.7 3.2 1.8 4.3 1.1 1.1 2.7 1.8 4.3 1.8s3.2-.7 4.3-1.8c1.1-1.1 1.8-2.7 1.8-4.3s-.6-3.2-1.8-4.3zm7.1 3.5h-2.5c-.5 0-.8.4-.8.8s.4.8.8.8h2.5c.5 0 .8-.4.8-.8s-.4-.8-.8-.8zm-11.4 8.9c-.5 0-.8.4-.8.8v2.5c0 .5.4.8.8.8.5 0 .8-.4.8-.8v-2.5c0-.4-.3-.8-.8-.8zm8.6-.5L22.4 22c-.3-.3-.8-.3-1.2 0s-.3.8 0 1.2L23 25c.3.3.8.3 1.2 0 .3-.4.3-.9-.1-1.2zM15.5 4c-.5 0-.8.4-.8.8v2.5c0 .5.4.8.8.8.5 0 .8-.4.8-.8V4.9c0-.5-.3-.9-.8-.9zm8.7 3.6c-.3-.3-.8-.3-1.2 0l-1.8 1.8c-.3.3-.3.8 0 1.2.3.3.8.3 1.2 0l1.8-1.8c.3-.3.3-.8 0-1.2zM6.6 15.4H4.1c-.5 0-.8.4-.8.8 0 .5.4.8.8.8h2.5c.5 0 .8-.4.8-.8s-.3-.8-.8-.8zM9.8 22c-.3-.3-.8-.3-1.2 0l-1.8 1.8c-.3.3-.3.8 0 1.2.3.3.8.3 1.2 0l1.8-1.8c.3-.4.3-.9 0-1.2zm0-12.6L8 7.6c-.3-.3-.8-.3-1.2 0-.3.4-.3.9 0 1.2l1.8 1.8c.3.3.8.3 1.2 0 .3-.3.3-.9 0-1.2z"></path></svg> Light Mode</span>
+                  </div>
+                  <div class="theme-img">
+                    <img src="./images/icon.png" alt="Logo" width="35" height="30" class="d-inline-block align-text-top">
+                  </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <a href="#home"><div class="left-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 25.5" width="20" height="25.5"><style>.st0{fill:#fcfcfc}</style><path d="M10 25c-.9 0-1.5-.6-1.5-1.5V10.1l-5.4 5.4c-.3.4-.7.5-1.1.5s-.8-.2-1.1-.4c-.6-.6-.6-1.5 0-2.1l8-8c.1-.1.3-.2.4-.3.3-.2.6-.2.7-.2s.4 0 .6.1c.2.1.3.2.4.3l8 8c.6.6.6 1.5 0 2.1-.2.4-.6.5-1 .5s-.8-.2-1.1-.4l-5.4-5.4v13.4c0 .8-.6 1.4-1.5 1.4z"></path><path class="st0" d="M10 5.5c.1 0 .3 0 .4.1.1 0 .2.1.3.2l8 8c.4.4.4 1 0 1.4-.2.2-.5.3-.7.3s-.5-.1-.7-.3L11 8.9v14.6c0 .6-.4 1-1 1s-1-.4-1-1V8.9l-6.3 6.3c-.2.2-.5.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-1 0-1.4l8-8c.1-.1.2-.2.3-.2.1-.1.3-.1.4-.1m0-1c-.2 0-.5 0-.8.2-.3.1-.5.3-.6.4l-8 8c-.8.8-.8 2 0 2.8.4.4.9.6 1.4.6s1-.2 1.4-.6L8 11.3v12.2c0 1.2.8 2 2 2s2-.8 2-2V11.3l4.6 4.6c.4.4.9.6 1.4.6s1-.2 1.4-.6c.8-.8.8-2 0-2.8l-8-8c-.1-.1-.3-.3-.6-.4-.3-.2-.6-.2-.8-.2z"></path><g><path d="M2 3.5C1.2 3.5.5 2.8.5 2S1.2.5 2 .5h16c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5H2z"></path><path class="st0" d="M18 1c.6 0 1 .4 1 1s-.4 1-1 1H2c-.6 0-1-.4-1-1s.4-1 1-1h16m0-1H2C.9 0 0 .9 0 2s.9 2 2 2h16c1.1 0 2-.9 2-2s-.9-2-2-2z"></path></g></svg>
+              </div>
+            </a>
+              </div>
+            </section>
+
+            <!-- <div class="right-share">
+              <div class="right-share-content">
+              <div class="heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="number">
+                <span>317</span>
+              </div>
+              <div class="share-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 30 27" fill="#f0c029" data-testid="icon-share-plus"><g clip-path="url(#clip0)"><path d="M6.4,13L17,6.8c0.7,0.7,1.6,1.1,2.7,1.1c2.2,0,3.9-1.8,3.9-3.9c0-2.2-1.8-3.9-3.9-3.9s-3.9,1.8-3.9,3.9    c0,0.3,0.1,0.6,0.1,0.9L5.2,11L6.4,13z" fill="#f0c029"></path><path d="M3.9,9.2c-2,0-3.9,1.8-3.9,3.9S1.8,17,3.9,17c1,0,2-0.4,2.7-1.1l9.3,5.4c-0.1,0.3-0.1,0.6-0.1,0.9c0,2.1,1.7,3.8,3.8,3.8    s3.8-1.7,3.8-3.8c0-2.1-1.7-3.8-3.8-3.8c-1,0-1.9,0.4-2.6,1L7.7,14c0.1-0.3,0.1-0.6,0.1-0.9C7.9,10.9,5.9,9.2,3.9,9.2z" fill="#f0c029"></path><path d="M30,11.9h-3.5V8.4h-2.2v3.5h-3.5v2.2h3.5v3.5h2.2v-3.5H30V11.9z" fill="#f0c029"></path></g><defs><clipPath id="clip0"><rect width="30" height="26.0571" fill="#f0c029"></rect></clipPath></defs></svg>
+              </div>
+            </div>
+            </div> -->
+          <!-- </section> -->
+    
+     
+</body>
+</html>
